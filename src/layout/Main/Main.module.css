@@ -1,4 +1,13 @@
 .main-container {
-    background-color: white;
-    height: 100%;
+  column-count: 6;
+  column-gap: 1em;
+}
+
+img {
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
