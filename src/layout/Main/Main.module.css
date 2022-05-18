@@ -11,3 +11,27 @@ img {
   object-fit: cover;
   border-radius: 10px;
 }
+
+@media only screen and (min-width: 1024px) {
+  .main-container {
+    column-count: 6;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .main-container {
+    column-count: 5;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .main-container {
+    column-count: 4;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  .main-container {
+    column-count: 2;
+  }
+}
