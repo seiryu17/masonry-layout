@@ -1,0 +1,14 @@
+.input {
+  border-radius: 1em;
+  border: unset;
+  padding: 0.75em 0;
+  background: #f2f2f2 url("../../assets/icon/iconmonstr-magnifier-6.svg")
+    no-repeat left;
+  background-size: 20px;
+  padding-left: 35px;
+  background-position: 7px 7px;
+}
+
+.input:focus-visible {
+  outline: unset;
+}
