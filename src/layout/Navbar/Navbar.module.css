@@ -1,7 +1,12 @@
 .container {
-    display: flex;
-    background-color: white;
-    padding: 1.5em;
-    justify-content: flex-end;
-    gap: 2em;
+  display: flex;
+  background-color: white;
+  padding: 1.5em 3em 0.5em 3em;
+  justify-content: flex-end;
+  gap: 2em;
+  align-items: center;
+}
+
+svg {
+  cursor: pointer;
 }
