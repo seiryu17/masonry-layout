@@ -1,4 +1,4 @@
-const data = [
+const datasource = [
   {
     _id: "5f115174961c75468fbe0f44",
     index: 0,
@@ -601,4 +601,4 @@ const data = [
   },
 ];
 
-export default data;
+export default datasource;

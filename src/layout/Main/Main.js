@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Main.module.css";
-import data from "../../datasource";
+import datasource from "../../datasource";
 
-const Main = () => {
+const Main = (props) => {
+  const [data, setData] = useState(datasource);
+
+  // useEffect(() => {
+  //   const delayDebounceFn = setTimeout(() => {
+  //     let temp = [...data];
+  //     temp = temp.filter((val) => {
+  //       if (props.searchText === "") {
+  //         return val;
+  //       } else if (
+  //         val.name.toLowerCase().includes(props.searchText.toLowerCase())
+  //       ) {
+  //         return val;
+  //       }
+  //       return false;
+  //     });
+  //     setData(temp);
+  //   }, 500);
+  //   return () => clearTimeout(delayDebounceFn);
+  // }, [props.searchText]);
+
   return (
     <div className={styles["main-container"]}>
       {data
