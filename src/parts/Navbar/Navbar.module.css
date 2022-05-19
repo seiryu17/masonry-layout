@@ -10,3 +10,16 @@
 svg {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 539px) {
+  .container {
+    gap: 1em;
+    padding: 1.5em 1em 0.5em 1em;
+    justify-content: center;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
