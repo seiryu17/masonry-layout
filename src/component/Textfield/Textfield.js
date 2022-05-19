@@ -11,4 +11,4 @@ const Textfield = (props) => {
   );
 };
 
-export default Textfield;
+export default React.memo(Textfield);

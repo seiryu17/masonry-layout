@@ -6,13 +6,10 @@ import { ReactComponent as BellIcon } from "../../assets/icon/iconmonstr-bell-1.
 import { ReactComponent as UserIcon } from "../../assets/icon/iconmonstr-user-19.svg";
 import Textfield from "../../component/Textfield/Textfield";
 
-const Navbar = () => {
-  const onHandleChangeSearch = (e) => {
-    console.log(e.target.value);
-  };
+const Navbar = (props) => {
   return (
     <div className={styles.container}>
-      <Textfield onChange={onHandleChangeSearch} />
+      <Textfield onChange={props.onHandleChangeSearch} />
       <Iconbutton onClick={() => alert("Im Home Icon")}>
         <HomeIcon fill="#8c8c8c" />
       </Iconbutton>

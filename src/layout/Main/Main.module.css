@@ -5,6 +5,13 @@
   background-color: white;
 }
 
+.no-items {
+  display: flex;
+  justify-content: center;
+  padding: 1em 6em;
+  background-color: white;
+}
+
 img {
   background-color: #eee;
   display: inline-block;

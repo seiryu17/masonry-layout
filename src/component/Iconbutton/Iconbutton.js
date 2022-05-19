@@ -4,4 +4,4 @@ const Iconbutton = (props) => {
   return <div onClick={props.onClick}>{props.children}</div>;
 };
 
-export default Iconbutton;
+export default React.memo(Iconbutton);
