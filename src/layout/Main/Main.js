@@ -15,8 +15,8 @@ const Main = (props) => {
 
   // To filter item list by user input search
   if (searchTerm !== "") {
-    listToDisplay = datasource.filter((fruit) => {
-      return fruit.name.includes(searchTerm);
+    listToDisplay = datasource.filter((x) => {
+      return x.name.includes(searchTerm.toLowerCase());
     });
   }
 
@@ -67,7 +67,7 @@ const Main = (props) => {
                     height={x.height}
                   />
                   <div className={styles["overlay"]}>
-                    <div class="text"></div>
+                    <div className={styles["text"]}>{x.name}</div>
                   </div>
                 </LazyLoad>
               );
