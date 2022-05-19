@@ -3,6 +3,7 @@ import styles from "./Main.module.css";
 import datasource from "../../datasource";
 import debouce from "lodash.debounce";
 import Navbar from "../../parts/Navbar/Navbar";
+import LazyLoad from "react-lazyload";
 
 const Main = (props) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -53,14 +54,14 @@ const Main = (props) => {
               x.width = `${temp[3]}px`;
               x.height = `${temp[4]}px`;
               return (
-                <img
-                  src={x.src}
-                  alt={x.name}
-                  width={x.width}
-                  height={x.height}
-                  key={index}
-                  loading="lazy"
-                />
+                <LazyLoad key={index} height={x.height} once>
+                  <img
+                    src={x.src}
+                    alt={x.name}
+                    width={x.width}
+                    height={x.height}
+                  />
+                </LazyLoad>
               );
             })
           : "Sorry, no items found."}
