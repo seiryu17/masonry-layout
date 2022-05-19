@@ -4,6 +4,28 @@
   background-color: white;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #d9d9d9;
+  margin: 0 0 1em;
+  border-radius: 10px;
+}
+
+.lazyload-wrapper {
+  position: relative;
+  width: 100%;
+}
+.lazyload-wrapper:hover .overlay {
+  opacity: 0.5;
+}
+
 .no-items {
   display: flex;
   justify-content: center;

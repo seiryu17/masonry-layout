@@ -54,13 +54,21 @@ const Main = (props) => {
               x.width = `${temp[3]}px`;
               x.height = `${temp[4]}px`;
               return (
-                <LazyLoad key={index} height={x.height} once>
+                <LazyLoad
+                  className={styles["lazyload-wrapper"]}
+                  key={index}
+                  height={x.height}
+                  once
+                >
                   <img
                     src={x.src}
                     alt={x.name}
                     width={x.width}
                     height={x.height}
                   />
+                  <div className={styles["overlay"]}>
+                    <div class="text"></div>
+                  </div>
                 </LazyLoad>
               );
             })
