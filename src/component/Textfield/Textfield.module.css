@@ -13,3 +13,11 @@
 .input:focus-visible {
   outline: unset;
 }
+
+@media only screen and (max-width: 539px) {
+  .input {
+    background-size: 18px;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+}
