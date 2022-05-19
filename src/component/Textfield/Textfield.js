@@ -7,6 +7,7 @@ const Textfield = (props) => {
       className={styles.input}
       type="text"
       onChange={props.onChange}
+      data-testid="search-input"
     ></input>
   );
 };
